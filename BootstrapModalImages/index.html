@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Bootstrap 4 Image Modals</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+	
+<!--
+<link rel='stylesheet' href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,700'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700'>
+<link rel='stylesheet' href='https://codepen.io/peterbenoit/pen/YrXgNK.css'>
+<link rel='stylesheet' href='https://codepen.io/peterbenoit/pen/XzKGdE.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+-->
+</head>
+<body>
+
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="ba-0">
+				<img data-toggle="modal" data-target="#myModal" data-imagename="a.jpg" alt="Card image cap" class="card-img-top" src="a.jpg"  style="width:100%">
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="ba-0">
+				<img data-toggle="modal" data-target="#myModal" data-imagename="b.jpg" alt="Card image cap" class="card-img-top" src="b.jpg"  style="width:100%">
+			</div>
+		</div>
+    </div>		
+</div>
+
+
+<ul class="js-my-modal-control list-group">
+  <li class="list-group-item" data-toggle="modal" data-target="#myModal" data-imagename="a.jpg">a</li>
+  <li class="list-group-item" data-toggle="modal" data-target="#myModal" data-imagename="b.jpg">b</li>
+  <li class="list-group-item" data-toggle="modal" data-target="#myModal" data-imagename="c.jpg">c</li>
+</ul>
+
+<!-- Modal which I will be filling with dynamic content -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      <textarea name='message-body'></textarea>
+	  <image name='message-image' style="width:100%"></image>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script  src="./script.js"></script>
+</body>
