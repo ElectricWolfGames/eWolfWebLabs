@@ -1,0 +1,40 @@
+.js-my-modal-control {
+  width: 300px;
+}
+.js-my-modal-control li{
+  cursor: pointer;
+}
+.js-my-modal-control li:hover{
+  background-color: #ccc;
+}
+.modal textarea {
+  width: 100%;
+}
+
+h4 {
+  font-family: 'Open Sans';
+  margin: 0;
+}
+
+.modal, body.modal-open {
+  padding-right: 0 !important;
+}
+
+body.modal-open {
+  overflow: auto;
+}
+
+body.scrollable {
+  overflow-y: auto;
+}
+
+.modal-footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+.modal-footer .btn {
+  position: absolute;
+  right: 10px;
+}
